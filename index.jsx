@@ -1,16 +1,22 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-const navbar = (
-    <nav>
-        <h1>Bob's Bistro</h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-)
+import Header from "./components/Header.jsx"
+import Footer from "./components/Footer.jsx"
+import AppContent from "./components/AppContent.jsx"
 
-/* ReactDOM.render(navbar, document.getElementById("root")) */
-ReactDOM.createRoot(document.getElementById('root')).render(navbar)
+
+function Page() {
+    return (
+        <div id="core">
+            <Header />
+            <AppContent />
+            <Footer />
+        </div>
+    )
+}
+
+
+const rootLevel = ReactDOM.createRoot(document.getElementById('root'))
+
+rootLevel.render(<Page />)
