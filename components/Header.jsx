@@ -1,4 +1,5 @@
 import React from "react"
+import logo from "../images/react-logo.png"
 
 export default Header
 
@@ -6,7 +7,7 @@ function Header() {
     return (
         <header className="header">
             <div className="subheader">
-                <img src="./images/react-logo.png"/>
+                <img src={logo}/>
                 <Navigation />
             </div>
             <h1>Fun facts about React</h1>
