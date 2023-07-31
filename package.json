@@ -5,6 +5,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.9",
     "vite": "latest"
   },
   "scripts": {
